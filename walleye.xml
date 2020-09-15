@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Device configuration -->
+    <project path="device/google/muskie" name="LineageOS/android_device_google_muskie" />
+
+</manifest>

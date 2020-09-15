@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Linux kernel 4.4 (Android) -->
+    <project path="kernel/google/msm8998" name="sailfish-pixel2/android_kernel_google_wahoo" />
+
+    <!-- Device configuration -->
+    <project path="device/google/wahoo" name="sailfish-pixel2/android_device_google_wahoo" revision="lineage-16.0" />
+
+    <!-- Vendor blobs -->
+    <!-- <project path="vendor/google" name="TheMuppets/proprietary_vendor_google" revision="lineage-16.0" /> -->
+
+    <!-- Removed the useless bootanimation/ directory which causes build issues without additional dependencies -->
+    <remove-project path="vendor/lineage" name="LineageOS/android_vendor_lineage" />
+    <project path="vendor/lineage" name="sailfishos-oneplus5/android_vendor_lineage" />
+
+     <!-- hybris-patches with additions -->
+    <remove-project path="hybris-patches" name="mer-hybris/hybris-patches" />
+    <project path="hybris-patches" name="sailfish-oneplus6/hybris-patches" revision="hybris-16.0" />
+
+    <!-- Custom hybris installer implementation (https://git.io/fjMH9) -->
+    <project path="hybris/hybris-installer" name="sailfish-oneplus6/hybris-installer" revision="master" />
+
+</manifest>
